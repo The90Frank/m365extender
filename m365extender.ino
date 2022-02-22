@@ -18,7 +18,7 @@ const uint32_t intervalArrow = 500;
 const Arrow left = Arrow(arrowPinL, intervalArrow);
 const Arrow right = Arrow(arrowPinR, intervalArrow);
 
-uint32_t pitches[] =  {NOTE_G5, NOTE_E6, NOTE_C5, NOTE_NO,  NOTE_C5, NOTE_NO,  NOTE_C5, NOTE_D5, NOTE_E5, NOTE_NO,  NOTE_F5, NOTE_NO,  NOTE_G5, NOTE_NO,  NOTE_G5, NOTE_NO,  NOTE_G5, NOTE_NO,  NOTE_E5,  NOTE_NO};
+uint32_t pitches[] =  {NOTE_G4, NOTE_E4, NOTE_C4, NOTE_NO,  NOTE_C4, NOTE_NO,  NOTE_C4, NOTE_D4, NOTE_E4, NOTE_NO,  NOTE_F4, NOTE_NO,  NOTE_G4, NOTE_NO,  NOTE_G4, NOTE_NO,  NOTE_G4, NOTE_NO,  NOTE_E4,  NOTE_NO};
 uint32_t times[] =    {150,     150,     300,     10,       300,     10,       150,     150,     150,     10,       150,     10,       300,     10,       300,     10,       300,     10,       300,      1500};
 const Buzzer buzzer = Buzzer(buzzerPin, pitches, times, 20);
 
