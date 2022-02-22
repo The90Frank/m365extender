@@ -1,28 +1,21 @@
 #ifndef __ARROW_H
 #define __ARROW_H
 
-#include <Arduino.h>
+#include "AsyncExecutor.h"
 
-class Arrow
+class Arrow : public AsyncExecutor 
 {
 private:
-    uint32_t _arrowPin;
-    uint32_t _interval;
+    uint32_t arrowPin;
     bool arrowState;
-    bool arrowON;
-    uint32_t previousMillis;
-    uint32_t currentMillis;
-    
-    void lBlink();
 
 public:
-    Arrow(uint32_t arrowPin, uint32_t interval);
+    Arrow(uint32_t pin, uint32_t interv);
+    bool getArrowON() { return objectActive; }
 
-    void exec();
-    void blinkStart();
-    void blinkStop();
-
-    bool getArrowON() { return arrowON; }
+    void task();
+    void taskBoot();
+    void taskShutdown();
 };
 
 #endif
