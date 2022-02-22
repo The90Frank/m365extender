@@ -18,9 +18,9 @@ const uint32_t intervalArrow = 500;
 const Arrow left = Arrow(arrowPinL, intervalArrow);
 const Arrow right = Arrow(arrowPinR, intervalArrow);
 
-uint32_t pitches[] =  {NOTE_B5, NOTE_NO,  NOTE_G6, NOTE_NO,  NOTE_E5, NOTE_NO,  NOTE_E5, NOTE_NO,  NOTE_E5, NOTE_F6, NOTE_NO,  NOTE_G5, NOTE_NO,  NOTE_A5, NOTE_NO,  NOTE_B5, NOTE_NO,  NOTE_B5, NOTE_NO,  NOTE_B5, NOTE_NO,  NOTE_G6,  NOTE_NO};
-uint32_t times[] =    {300,     10,       300,     10,       150,     10,       150,     10,       150,     150,     10,       150,     10,       150,     10,       300,     10,       300,     10,       300,     10,       150,      1500};
-const Buzzer buzzer = Buzzer(buzzerPin, pitches, times, 23);
+uint32_t pitches[] =  {NOTE_B5, NOTE_G6, NOTE_E5, NOTE_NO,  NOTE_E5, NOTE_NO,  NOTE_E5, NOTE_F6, NOTE_G5, NOTE_NO,  NOTE_A5, NOTE_NO,  NOTE_B5, NOTE_NO,  NOTE_B5, NOTE_NO,  NOTE_B5, NOTE_NO,  NOTE_G6,  NOTE_NO};
+uint32_t times[] =    {150,     150,     300,     10,       300,     10,       150,     150,     150,     10,       150,     10,       300,     10,       300,     10,       300,     10,       150,      1500};
+const Buzzer buzzer = Buzzer(buzzerPin, pitches, times, 20);
 
 void interF() {
   byte state = digitalRead(interruptFlashPin);
