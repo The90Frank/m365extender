@@ -1,16 +1,16 @@
 #include "Arrow.h"
 #include "Buzzer.h"
 
-const uint32_t flashPin = 13;
+const uint32_t flashPin = 10;
 const uint32_t interruptFlashPin = 0;
 
-const uint32_t buzzerPin = 12;
+const uint32_t buzzerPin = 11;
 const uint32_t interruptBuzzerPin = 1;
 
-const uint32_t arrowPinL = 11;
+const uint32_t arrowPinL = 12;
 const uint32_t interruptPinL = 2;
 
-const uint32_t arrowPinR = 10;
+const uint32_t arrowPinR = 13;
 const uint32_t interruptPinR = 3;
 
 const uint32_t intervalArrow = 500;
