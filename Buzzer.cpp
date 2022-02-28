@@ -11,6 +11,7 @@ void Buzzer::task(){
 }
 
 void Buzzer::taskBoot(){
+  buzzerState = 0;
   noTone(buzzerPin);
 }
 
